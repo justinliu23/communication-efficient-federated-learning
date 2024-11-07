@@ -2,6 +2,8 @@
 
 This repository contains a Python-based quantization module designed to optimize federated learning by reducing the communication cost associated with model updates. By converting client models from full precision (32-bit) to low-bit (e.g., 8-bit) representations, this project aims to improve efficiency in federated learning environments where communication bandwidth is a constraint.
 
+Click [here](https://github.com/justinliu23/federated-learning-simulation) for my related repo on creating a federated learning simulation with multiple devices that each train independently on local data.
+
 ## Project Overview
 
 In federated learning, multiple clients collaboratively train a shared model without sharing their local data. However, each communication round between clients and the central server can be bandwidth-intensive due to the large size of model parameters. This project addresses this challenge by using **model quantization**, a technique that reduces the bit-width of model parameters before transmission, thereby decreasing the model size and communication overhead.
